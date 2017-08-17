@@ -1,4 +1,4 @@
-# Lyft Go Samples
+# Lyft Node.js Samples
 This repository contains examples and best practices for building Node.js applications that leverage the Lyft API.
 
 ## Support
