@@ -5,7 +5,7 @@ Digital cartographers, rejoice! With Lyft's Ride Request API, you can rebuild mu
 ## Registration
 - Create a Lyft Developer [account](https://www.lyft.com/developers).
 - Once registered, create a new Lyft [application](https://www.lyft.com/developers/manage).
-- Your new application will be assigned a Client ID and a Client Token.
+- Your new application will be assigned a Client ID and a Client Secret.
 
 You will also need to [sign up](https://www.mapbox.com/signup/) for a Mapbox developer account and generate an API key.
 
@@ -17,7 +17,7 @@ cd map-driver-eta
 npm install
 ```
 
-Set your Lyft Client ID and Client Token by copying the example file:
+Set your Lyft Client ID and Client Secret by copying the example file:
 ```console
 cp .env-example .env
 ```
