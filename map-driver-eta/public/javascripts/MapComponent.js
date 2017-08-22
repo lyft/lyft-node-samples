@@ -63,13 +63,18 @@ window.MapComponent = (function (window, document, api) {
         // Print the coordinates of where the point had
         // finished being dragged to on the map.
         coordinates.style.display = 'block';
-        coordinates.innerHTML = 'Longitude: ' + coords.lng + '<br />Latitude: ' + coords.lat + '<br /><hr />';
+        coordinates.appendChild(document.createTextNode('Longitude: ' + coords.lng));
+        coordinates.appendChild(document.createElement('br'));
+        coordinates.appendChild(document.createTextNode('Latitude: ' + coords.lat));
+        coordinates.appendChild(document.createElement('br'));
+        coordinates.appendChild(document.createElement('hr'));
 
         // Call the Lyft SDK to retrieve driver ETA at this location 
         api.getApiLyftEta(coords.lat, coords.lng, function(res){
             for (var k in res.eta_estimates) {
                 var eta = res.eta_estimates[k];
-                coordinates.innerHTML += eta.display_name + ': ' + eta.eta_seconds + ' sec<br />';
+                coordinates.appendChild(document.createTextNode(eta.display_name + ': ' + eta.eta_seconds + ' sec'));
+                coordinates.appendChild(document.createElement('br'));
             }
         });
 
