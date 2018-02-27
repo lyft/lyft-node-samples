@@ -1,4 +1,9 @@
+# DEPRECATION NOTICE
+
+Please note that the node SDK and these samples are deprecated and are no longer officially supported by Lyft.
+
 # Lyft Node.js Samples
+
 This repository contains examples and best practices for building Node.js applications that leverage the Lyft API.
 
 ## Support
